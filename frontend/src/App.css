@@ -1,0 +1,9 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
