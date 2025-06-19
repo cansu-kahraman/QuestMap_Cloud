@@ -1,5 +1,5 @@
 # Node.js base image kullanımı
-FROM node:16
+FROM node:18-alpine
 
 # Çalışma dizini oluşturma
 WORKDIR /app
