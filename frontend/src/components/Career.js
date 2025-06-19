@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Tabs, Button, Radio, message } from 'antd';
 
 const { TabPane } = Tabs;
-const API_URL = 'http://localhost:5001/auth';
+const API_URL = '${process.env.REACT_APP_API_URL}/auth';
 
 // Meslek ve kişilik özellikleri verileri
 const careersData = [
@@ -69,7 +69,7 @@ function TestResult({ token }) {
   useEffect(() => {
     const fetchTestResult = async () => {
       try {
-        const response = await fetch(`http://localhost:5001/auth/get-test`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/get-test`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,

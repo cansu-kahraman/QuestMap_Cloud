@@ -12,7 +12,7 @@ const QuestBot = () => {
     setResponse('');
 
     try {
-      const res = await fetch('http://localhost:5001/questbot', {
+      const res = await fetch('${process.env.REACT_APP_API_URL}/questbot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

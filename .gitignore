@@ -2,6 +2,7 @@
 /node_modules
 .env
 /backend/.env
+/frontend/.env
 
 # İşletim sistemi ve IDE dosyaları
 .DS_Store
